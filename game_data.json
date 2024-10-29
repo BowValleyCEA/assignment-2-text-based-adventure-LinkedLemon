@@ -1,5 +1,55 @@
 {
   "GameName": "Assignment 2",
   "Description": "Some game description for Assignment 2",
-  "Rooms":  [{"Name":"Living Room","Reference":"living_room","Description":"Place where people live, I guess."}, {"Name":"Dining Room","Reference":"dining_room","Description":"A dining for rooms"}]
+    "Rooms": [
+        {
+            "Name": "Living Room",
+            "Reference": "living_room",
+            "Description": "Place where people live, I guess.",
+            "North": "Dining Room",
+            "South": "0",
+            "West": "0",
+            "East" :  "0",
+            "StaticItems": [
+                {
+                    "Name": "Vase",
+                    "Reference": "vase",
+                    "Description": "Its smooth and cold to the touch.",
+                    "Smell": "It doesnt smell like much but a hint of dust.",
+                    "Taste": "Dusty...",
+                    "_Type": "Static",
+                    "id": "0"
+                },
+                {
+                    "Name": "Key",
+                    "Reference": "key",
+                    "Description": "its cold and a nine is engraved in its base.",
+                    "Smell": "Smells like freedom.",
+                    "Taste": "Tastes like... copper.",
+                    "_Type": "Pickup",
+                    "id" :  "2"
+                }
+            ]
+        },
+        {
+            "Name": "Dining Room",
+            "Reference": "dining_room",
+            "Description": "A dining for rooms",
+            "North": "0",
+            "South": "Living Room",
+            "West": "0",
+            "East": "0",
+            "StaticItems": [
+                {
+                    "Name": "Disk",
+                    "Reference": "disk",
+                    "Description": "Looking at it hurts and it seems to be immiting a extreamly loud pitch sound.",
+                    "Smell": "Smells of... blood?",
+                    "Taste": "Yeah right, like i'd lick that.",
+                    "_Type": "Static",
+                    "id": "1"
+                }
+            ]
+        }
+    ]
 }

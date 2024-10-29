@@ -12,5 +12,19 @@ namespace game1402_a2_starter
         public string Name { get; set; }
         public string Reference { get; set; }
         public string Description { get; set; }
+        public string North { get; set; }
+        public string South { get; set; }
+        public string West { get; set; }
+        public string East { get; set; }
+
+
+
+
+        public List<StaticItems> StaticItems { get; set; }
+
+        public void ReturnName()
+        {
+            Console.WriteLine("You are in the " + Name);
+        }
     }
 }

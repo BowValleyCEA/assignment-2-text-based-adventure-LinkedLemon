@@ -44,7 +44,7 @@
                 {
                     "Name": "Exit",
                     "Reference": "Exit door : The door to leave",
-                    "Description": [ "Feels like my way out of here... and wood.", "the door cracks open after the shard slides in!", "freedom is so close." ],
+                  "Description": [ "The large wooden door leads outside with a lock in the handle. the shape of the lock is circular... intesting. feels like my way out of here... and wood.", "the door cracks open after the shard slides in!", "freedom is so close." ],
                     "Smell": "I can smell the fresh air outside.",
                     "Taste": "I cant wait to eat when im out of here.",
                     "_Type": "Interaction",

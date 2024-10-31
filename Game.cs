@@ -57,7 +57,10 @@ namespace game1402_a2_starter
                 Console.WriteLine("Inside this room is: ");
                 for (int i = 0; i < currentRoom.StaticItems.Count; i++)
                 {
-                    Console.WriteLine(currentRoom.StaticItems[i].Reference);
+                    if (currentRoom.StaticItems[i].isAvailable)
+                    {
+                        Console.WriteLine(currentRoom.StaticItems[i].Reference);
+                    }
                 }
                 return;
             }

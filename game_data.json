@@ -1,33 +1,65 @@
 {
-  "GameName": "Assignment 2",
-  "Description": "Some game description for Assignment 2",
+    "GameName": "A simple cabin.",
+    "Description": "You awake in a cabin, you vision seems too blury to make out distinct details so you must rely on your other senses to leave.",
     "Rooms": [
         {
             "Name": "Living Room",
             "Reference": "living_room",
-            "Description": "Place where people live, I guess.",
+            "Description": "A large wooden room, the floor is covered in a big carpet with a couch in the corner and a locked door to leave through.",
             "North": "Dining Room",
             "South": "0",
             "West": "0",
-            "East" :  "0",
+            "East": "0",
             "StaticItems": [
                 {
                     "Name": "Vase",
-                    "Reference": "vase",
-                    "Description": "Its smooth and cold to the touch.",
+                    "Reference": "Vase : A blue vase",
+                    "Description": [ "Its smooth and cold to the touch." ],
                     "Smell": "It doesnt smell like much but a hint of dust.",
                     "Taste": "Dusty...",
                     "_Type": "Static",
-                    "id": "0"
+                    "id": "0",
+                    "isAvailable": true
+                },
+                {
+                    "Name": "Cabnet",
+                    "Reference": "Cabnet : A large wooden cabnet",
+                    "Description": [ "I can feel the wood outline and the smooth glass covering the china. seems to be locked with no way to open." ],
+                    "Smell": "Smells like pine.",
+                    "Taste": "the glass doesnt taste like much.",
+                    "_Type": "Static",
+                    "id": "0",
+                    "isAvailable": true
+                },
+                {
+                    "Name": "Couch",
+                    "Reference": "Couch : A three seater couch",
+                    "Description": [ "Soft and velvet to the touch." ],
+                    "Smell": "Smells like leather and... farts.",
+                    "Taste": "I am not licking that.",
+                    "_Type": "Static",
+                    "id": "0",
+                    "isAvailable": true
+                },
+                {
+                    "Name": "Exit",
+                    "Reference": "Exit door : The door to leave",
+                    "Description": [ "Feels like my way out of here... and wood.", "the door cracks open after the shard slides in!", "freedom is so close." ],
+                    "Smell": "I can smell the fresh air outside.",
+                    "Taste": "I cant wait to eat when im out of here.",
+                    "_Type": "Interaction",
+                    "id": "3",
+                    "isAvailable": true
                 },
                 {
                     "Name": "Key",
-                    "Reference": "key",
-                    "Description": "its cold and a nine is engraved in its base.",
+                    "Reference": "Key: A metal key",
+                    "Description": [ "its cold and a nine is engraved in its base." ],
                     "Smell": "Smells like freedom.",
                     "Taste": "Tastes like... copper.",
                     "_Type": "Pickup",
-                    "id" :  "2"
+                    "id": "2",
+                    "isAvailable": true
                 }
             ]
         },
@@ -42,14 +74,54 @@
             "StaticItems": [
                 {
                     "Name": "Disk",
-                    "Reference": "disk",
-                    "Description": "Looking at it hurts and it seems to be immiting a extreamly loud pitch sound.",
+                    "Reference": "Disk : A large stone disk",
+                    "Description": [ "Feels of well polished stone and its emitting a ear pearcing pitch." ],
                     "Smell": "Smells of... blood?",
                     "Taste": "Yeah right, like i'd lick that.",
                     "_Type": "Static",
-                    "id": "1"
+                    "id": "1",
+                    "isAvailable": true
+                },
+                {
+                    "Name": "Chest",
+                    "Reference": "Chest : A wooden chest with a lock",
+                    "Description": [
+                        "Rough corse wood underneath my fingertips, a smooth metal lock with a 9 engraved in it rests at the center.",
+                        "The now opened chest i can feel a glass ball covered in dust sitting in the center of the chest",
+                        "Inside the chest you gently pick up the ball, it glows with a warm touch in your hand and suddenly... it explodes in your hand, leaving thousands of cuts in your hand leaving a distinct circular shard on the ground."
+                    ],
+                    "Smell": "Smells of pine and saddness.",
+                    "Taste": "It has a taste of pine and splinters... owie.",
+                    "_Type": "Interaction",
+                    "id": "2",
+                    "HoldingItem": "Glass",
+                    "isAvailable": true
+                },
+                {
+                    "Name": "Glass",
+                    "Reference": "Glass : A shard of glass from the ball",
+                    "Description": [
+                        "Sharp to the touch, I should be gentle with this."
+                    ],
+                    "Smell": "It's glass?",
+                    "Taste": "Are you stupid on purpose?",
+                    "_Type": "Pickup",
+                    "id": "3",
+                    "isAvailable": false
                 }
+
             ]
+        },
+        {
+            "Name": "Exit room",
+            "Reference": "exit_room",
+            "Description": "The end of the game",
+            "North": "Living Room",
+            "South": "0",
+            "West": "0",
+            "East": "0",
+            "id": "3",
+            "StaticItems": []
         }
     ]
 }

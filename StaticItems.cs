@@ -10,7 +10,7 @@ namespace game1402_a2_starter
     {
         public string Name { get; set; }
         public string Reference { get; set; }
-        public string Description { get; set; }
+        public string[] Description { get; set; }
         public string Smell { get; set; }
         public string Taste { get; set; }
         public string _Type
@@ -36,10 +36,13 @@ namespace game1402_a2_starter
                 }
             }
         }
-        private string id { get; set; }
+        public string id { get; set; }
+
+        public int state = 0;
+        public bool isAvailable { get; set; }
+        public string HoldingItem { get; set; }
 
         public Types objectType;
-            
         public enum Types {
             Static,
             Pickup,
